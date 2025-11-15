@@ -17,7 +17,7 @@ Images are loaded from disk, resized to 128×128, normalized, and fed into the m
 📁 Cat-Dog-Classification\
 │── cat_dog.ipynb        # Main notebook with full implementation\
 |__ data.txt             # Link to the dataset\
-│── README.md            # Project documentation\
+│── README.md            # Project documentation
 
 
 # ⚙️ How It Works
@@ -68,4 +68,4 @@ model.evaluate(X_test, y_test)
 # 7️⃣ Visualization\
 Accuracy vs Epochs\
 Loss vs Epochs\
-Both are plotted using Matplotlib.\
+Both are plotted using Matplotlib.
