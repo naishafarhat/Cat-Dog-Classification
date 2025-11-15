@@ -15,9 +15,9 @@ Images are loaded from disk, resized to 128×128, normalized, and fed into the m
 
 🗂 Project Structure
 📁 Cat-Dog-Classification
-│── cat_dog.ipynb        # Main notebook with full implementation
-|__ data.txt             # Link to the dataset
-│── README.md            # Project documentation
+│── cat_dog.ipynb        # Main notebook with full implementation\\
+|__ data.txt             # Link to the dataset\\
+│── README.md            # Project documentation\\
 
 
 ⚙️ How It Works
