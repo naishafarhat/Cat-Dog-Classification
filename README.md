@@ -11,7 +11,7 @@ A custom CNN architecture is used for training, built using TensorFlow Keras.\
 The dataset consists of image folders:\
 /animals/cat\
 /animals/dog\
-Images are loaded from disk, resized to 128×128, normalized, and fed into the model.\
+Images are loaded from disk, resized to 128×128, normalized, and fed into the model.
 
 # 🗂 Project Structure
 📁 Cat-Dog-Classification\
@@ -27,19 +27,19 @@ TensorFlow/Keras\
 NumPy\
 PIL (Pillow)\
 Matplotlib\
-Scikit-learn\
+Scikit-learn
 
 # 2️⃣ Loading Images
 Images are read from folder paths using a custom function:\
 def load_images(folder, label):\
     # Loads images and assigns labels (0 = cat, 1 = dog)\
-It also handles corrupted image files safely using try-except.\
+It also handles corrupted image files safely using try-except.
 
 # 3️⃣ Dataset Preparation
 Convert list of images → NumPy arrays\
 Normalize pixel values\
 One-hot encode labels\
-Train–Test split (80%-20%)\
+Train–Test split (80%-20%)
 
 # 4️⃣ Model Architecture
 A simple CNN with:\
@@ -50,7 +50,7 @@ Dense(64)\
 Dense(2, softmax)\
 Activation functions: ReLU and Softmax\
 Loss: Categorical Crossentropy\
-Optimizer: Adam\
+Optimizer: Adam
 
 # 5️⃣ Training
 model.fit(\
@@ -59,11 +59,11 @@ model.fit(\
     steps_per_epoch=2,\
     epochs=2,\
     batch_size=8\
-)\
+)
 
 # 6️⃣ Evaluation
 The model is evaluated on unseen test data:\
-model.evaluate(X_test, y_test)\
+model.evaluate(X_test, y_test)
 
 # 7️⃣ Visualization\
 Accuracy vs Epochs\
