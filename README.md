@@ -13,7 +13,7 @@ The dataset consists of image folders:\
 /animals/dog\
 Images are loaded from disk, resized to 128×128, normalized, and fed into the model.\
 
-# 🗂 Project Structure\
+# 🗂 Project Structure
 📁 Cat-Dog-Classification\
 │── cat_dog.ipynb        # Main notebook with full implementation\
 |__ data.txt             # Link to the dataset\
@@ -21,7 +21,7 @@ Images are loaded from disk, resized to 128×128, normalized, and fed into the m
 
 
 # ⚙️ How It Works
-# 1️⃣ Loading Libraries\
+# 1️⃣ Loading Libraries
 The project uses:\
 TensorFlow/Keras\
 NumPy\
@@ -29,19 +29,19 @@ PIL (Pillow)\
 Matplotlib\
 Scikit-learn\
 
-# 2️⃣ Loading Images\
+# 2️⃣ Loading Images
 Images are read from folder paths using a custom function:\
 def load_images(folder, label):\
     # Loads images and assigns labels (0 = cat, 1 = dog)\
 It also handles corrupted image files safely using try-except.\
 
-# 3️⃣ Dataset Preparation\
+# 3️⃣ Dataset Preparation
 Convert list of images → NumPy arrays\
 Normalize pixel values\
 One-hot encode labels\
 Train–Test split (80%-20%)\
 
-# 4️⃣ Model Architecture\
+# 4️⃣ Model Architecture
 A simple CNN with:\
 Conv2D(32) → MaxPool\
 Conv2D(64) → MaxPool\
@@ -52,7 +52,7 @@ Activation functions: ReLU and Softmax\
 Loss: Categorical Crossentropy\
 Optimizer: Adam\
 
-# 5️⃣ Training\
+# 5️⃣ Training
 model.fit(\
     X_train, y_train,\
     validation_split=0.2,\
@@ -61,7 +61,7 @@ model.fit(\
     batch_size=8\
 )\
 
-# 6️⃣ Evaluation\
+# 6️⃣ Evaluation
 The model is evaluated on unseen test data:\
 model.evaluate(X_test, y_test)\
 
