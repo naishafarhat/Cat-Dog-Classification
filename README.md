@@ -21,13 +21,13 @@ Images are loaded from disk, resized to 128×128, normalized, and fed into the m
 
 
 ⚙️ How It Works
-1️⃣ Loading Libraries
-The project uses:
-TensorFlow/Keras
-NumPy
-PIL (Pillow)
-Matplotlib
-Scikit-learn
+1️⃣ Loading Libraries\
+The project uses:\
+TensorFlow/Keras\
+NumPy\
+PIL (Pillow)\
+Matplotlib\
+Scikit-learn\
 
 2️⃣ Loading Images
 Images are read from folder paths using a custom function:
