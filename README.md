@@ -65,7 +65,7 @@ model.fit(\
 The model is evaluated on unseen test data:\
 model.evaluate(X_test, y_test)
 
-# 7️⃣ Visualization\
+# 7️⃣ Visualization
 Accuracy vs Epochs\
 Loss vs Epochs\
 Both are plotted using Matplotlib.
